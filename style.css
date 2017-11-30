@@ -2093,6 +2093,8 @@ ul.sl-nav-list {
 
 li.featured-content {
 	padding-bottom: 2.4rem;
+	padding-top: 0.8rem;
+	border-top: 1px solid #EEE;
 }
 
 
