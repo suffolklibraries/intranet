@@ -149,3 +149,6 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+// LP enable page excerpts
+add_post_type_support( 'page', 'excerpt' );
