@@ -360,6 +360,20 @@ inline code */
 	border-bottom: 1px dotted #E7040F;
 }
 
+.entry-content a:link {
+	color: #00449E;
+}
+
+.entry-content a:visited {
+	color: #408BC9;
+}
+
+.entry-content a:hover,
+.entry-content a:active,
+.entry-content a:focus {
+	color: #E7040F;
+}
+
 
 /*
 SIDEBARS
