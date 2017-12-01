@@ -144,7 +144,8 @@ HEADER
 */
 
 .site-header {
-	background-color: #FFF;
+	background-color: #3B1B53;
+	color: #FFF;
 	padding: 1rem 0.5rem;
 }
 
@@ -191,13 +192,13 @@ HEADER
 
 .site-title a:link,
 .site-title a:visited {
-	color: #00449E;
+	color: #FFF;
 }
 
 .site-title a:hover,
 .site-title a:active,
 .site-title a:focus {
-	color: #E7040F;
+	color: #FFF;
 }
 
 @media only screen and (min-width: 840px) {
@@ -282,8 +283,8 @@ BREADCRUMBS
 .breadcrumb a:hover,
 .breadcrumb a:active,
 .breadcrumb a:focus {
-	color: #E7040F;
-	border-bottom: 1px dotted #E7040F;
+	color: #EC008C;
+	border-bottom: 1px dotted #EC008C;
 }
 
 
@@ -297,7 +298,7 @@ ARTICLES
 }
 
 .entry-header {
-	padding-bottom: 1rem;
+	padding-bottom: 0.25rem;
 	border-bottom: 1px solid #EEE;
 	margin-bottom: 1rem;
 }
@@ -338,7 +339,7 @@ inline code */
 .entry-title a:hover,
 .entry-title a:active,
 .entry-title a:focus {
-	color: #E7040F;
+	color: #EC008C;
 }
 
 .entry-meta {
@@ -350,14 +351,12 @@ inline code */
 .entry-meta a:link,
 .entry-meta a:visited {
 	color: #00449E;
-	border-bottom: 1px dotted #00449E;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active,
 .entry-meta a:focus {
-	color: #E7040F;
-	border-bottom: 1px dotted #E7040F;
+	color: #EC008C;
 }
 
 .entry-content a:link {
@@ -371,7 +370,7 @@ inline code */
 .entry-content a:hover,
 .entry-content a:active,
 .entry-content a:focus {
-	color: #E7040F;
+	color: #EC008C;
 }
 
 
@@ -428,7 +427,7 @@ WIDGETS
 /* Search form */
 .search-form input[type="search"] {
 	width: 50%;
-	padding: 0.5rem;
+	padding: 0.25rem 0.5rem;
 	border: 1px solid #CCC;
 	font-size: 0.875rem;
 	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
@@ -443,7 +442,7 @@ WIDGETS
 }
 
 .search-form input[type="submit"] {
-	padding: 0.5rem;
+	padding: 0.25rem 0.5rem;
 	background-color: #00449E;
 	color: white;
 	font-size: 0.875rem;
@@ -477,11 +476,12 @@ WIDGETS
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	border-top: 1px solid #EEE;
 }
 
 .sidebar .widget li {
 	padding: 0.125rem 0;
-	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
 }
 
 .sidebar .widget a:link {
@@ -495,7 +495,7 @@ WIDGETS
 .sidebar .widget a:hover,
 .sidebar .widget a:active,
 .sidebar .widget a:focus {
-	color: #E7040F;
+	color: #EC008C;
 }
 
 .sidebar .widget .post-date {
@@ -514,7 +514,6 @@ Note: authors will need to add .main-page-nav-list wrapper
 
 .main-page-nav-list li {
 	padding: 0.25rem 0 1rem 0;
-	border-bottom: 1px solid #EEE;
 }
 
 @media only screen and (min-width: 840px) {
@@ -537,6 +536,35 @@ Note: authors will need to add .main-page-nav-list wrapper
 
 .main-page-nav-list .entry-content p {
 	margin: 0;
+}
+
+/* Widgets on page nav lists */
+.widgets_on_page ul {
+	margin: 0 0 1.5rem 0;
+	padding: 0;
+}
+
+.widgets_on_page li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.widgets_on_page li a {
+	display: block;
+	padding: 0.125rem 0;
+	border-bottom: 1px solid #EEE;
+}
+
+.widgets_on_page .widgettitle {
+	font-size: 1rem;
+	margin: 0 0 0.25rem 0;
+}
+
+@media only screen and (min-width: 840px) {
+	.widgets_on_page .widgettitle {
+		font-size: 1.5rem;
+	}
 }
 
 
