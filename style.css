@@ -1,5 +1,5 @@
 /*
-	Theme Name: SL intranet
+	Theme Name: Suffolk Libraries intranet
 	Theme URI: http://www.studiopress.com/
 	Description: Child of the Genesis theme with no inherited styles
 	Author: Leon Paternoster
@@ -310,6 +310,7 @@ inline code */
 	font-size: 1.5rem !important;
 	margin: 0 0 0.25rem 0 !important;
 	line-height: 1.2  !important;
+	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif !important;
 }
 
 .archive .entry-title {
