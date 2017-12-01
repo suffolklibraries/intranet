@@ -561,12 +561,6 @@ Note: authors will need to add .main-page-nav-list wrapper
 	margin: 0 0 0.25rem 0;
 }
 
-@media only screen and (min-width: 840px) {
-	.widgets_on_page .widgettitle {
-		font-size: 1.5rem;
-	}
-}
-
 
 
 } /* End of screen media query, print styles can follow this */
