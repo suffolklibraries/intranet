@@ -432,6 +432,8 @@ WIDGETS
 	border: 1px solid #CCC;
 	font-size: 0.875rem;
 	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
 .search-form input[type="submit"] {
@@ -442,6 +444,8 @@ WIDGETS
 	border: 1px solid #CCC;
 	cursor: pointer;
 	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
 ::-moz-placeholder {
