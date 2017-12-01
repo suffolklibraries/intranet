@@ -49,8 +49,8 @@ define( 'CHILD_THEME_VERSION', '2.3.0' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'dashicons' );
+	// wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
+	// wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js", array( 'jquery' ), CHILD_THEME_VERSION, true );
@@ -152,3 +152,6 @@ function genesis_sample_comments_gravatar( $args ) {
 
 // LP enable page excerpts
 add_post_type_support( 'page', 'excerpt' );
+
+// LP surpress inline CSS (see https://github.com/copyblogger/genesis-simple-faq/issues/28)
+add_filter( 'gs_faq_print_styles', '__return_false' );
