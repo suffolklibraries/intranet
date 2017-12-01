@@ -427,13 +427,19 @@ WIDGETS
 
 /* Search form */
 .search-form input[type="search"] {
-	width: 75%;
+	width: 50%;
 	padding: 0.5rem;
 	border: 1px solid #CCC;
 	font-size: 0.875rem;
 	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 	-webkit-appearance: none;
 	border-radius: 0;
+}
+
+@media only screen and (min-width: 840px) {
+	.search-form input[type="search"] {
+		width: 75%;
+	}
 }
 
 .search-form input[type="submit"] {
