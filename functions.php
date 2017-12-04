@@ -41,26 +41,11 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.3.0' );
+define( 'CHILD_THEME_NAME', 'Suffolk Libraries Intranet' );
+define( 'CHILD_THEME_URL', 'https://www.leonpaternoster.com/' );
+define( 'CHILD_THEME_VERSION', '0.1' );
 
-// Enqueue Scripts and Styles.
-add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
-function genesis_sample_enqueue_scripts_styles() {
 
-	// wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
-	// wp_enqueue_style( 'dashicons' );
-
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js", array( 'jquery' ), CHILD_THEME_VERSION, true );
-	wp_localize_script(
-		'genesis-sample-responsive-menu',
-		'genesis_responsive_menu',
-		genesis_sample_responsive_menu_settings()
-	);
-
-}
 
 // Define our responsive menu settings.
 function genesis_sample_responsive_menu_settings() {
@@ -161,3 +146,9 @@ add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
+
+// LP dequeue Gfonts Script
+function wpdocs_dequeue_script() {
+   wp_dequeue_script( 'sp_load_google_fonts' );
+}
+add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );

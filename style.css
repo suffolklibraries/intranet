@@ -52,7 +52,7 @@ body {
 	line-height: 1.5;
 	color: #333;
 	background-color: #EEE;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 }
 
 article,
@@ -99,12 +99,12 @@ ELEMENTS
 */
 
 html {
-	font-size: 112.5%;
+	font-size: 106.25%;
 }
 
 @media only screen and (min-width: 840px) {
 	html {
-		font-size: 125%;
+		font-size: 118.75%;
 	}
 }
 
@@ -344,7 +344,13 @@ ARTICLES
 	padding: 1rem 0;
 }
 
-.entry-header {
+.search-results .entry,
+.blog .entry {
+	padding-bottom: 1.5rem;
+}
+
+.entry-header,
+.archive-description {
 	padding-bottom: 0.25rem;
 	border-bottom: 1px solid #EEE;
 	margin-bottom: 1rem;
@@ -358,10 +364,12 @@ inline code */
 	font-size: 1.5rem !important;
 	margin: 0 0 0.25rem 0 !important;
 	line-height: 1.2  !important;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif !important;
+	font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif !important;
 }
 
-.archive .entry-title {
+.archive .entry-title,
+.blog .entry-title,
+.search-results .entry-title {
 	font-size: 1.25rem !important;
 }
 
@@ -370,7 +378,9 @@ inline code */
 	.archive-title {
 		font-size: 2.25rem  !important;
 	}
-	.archive .entry-title {
+	.archive .entry-title,
+	.blog .entry-title,
+	.search-results .entry-title {
 		font-size: 1.5rem !important;
 	}
 }
@@ -481,7 +491,7 @@ WIDGETS
 	padding: 0.25rem 0.5rem;
 	border: 1px solid #CCC;
 	font-size: 0.875rem;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 	-webkit-appearance: none;
 	border-radius: 0;
 }
@@ -499,7 +509,7 @@ WIDGETS
 	font-size: 0.875rem;
 	border: 1px solid #CCC;
 	cursor: pointer;
-	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 	-webkit-appearance: none;
 	border-radius: 0;
 }
