@@ -351,7 +351,7 @@ ARTICLES
 
 .entry-header,
 .archive-description {
-	padding-bottom: 0.25rem;
+	padding-bottom: 1rem;
 	border-bottom: 1px solid #EEE;
 	margin-bottom: 1rem;
 }
@@ -428,6 +428,86 @@ inline code */
 .entry-content a:active,
 .entry-content a:focus {
 	color: #EC008C;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content dt {
+	margin: 2.25rem 0 0 0;
+	font-weight: bold;
+}
+
+.entry-content h1,
+.entry-content h2 {
+	font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 840px) {
+	.entry-content h1,
+	.entry-content h2 {
+		font-size: 1.5rem;
+	}
+}
+
+.entry-content h3,
+.entry-content dt {
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 840px) {
+	.entry-content h3,
+	.entry-content dt {
+		font-size: 1.25rem;
+	}
+}
+
+.entry-content h4 {
+	font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 840px) {
+	.entry-content h4 {
+		font-size: 1rem;
+	}
+}
+
+.entry-content dd,
+.entry-content p {
+	margin: 1rem 0;
+}
+
+.entry-content table {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	overflow-x: auto;
+	white-space: nowrap;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 1rem 0;
+}
+
+.entry-content table,
+.entry-content table tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+}
+
+.entry-content thead {
+	font-weight: bold;
+}
+
+.entry-content tr {
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 0.5rem;
+}
+
+.entry-content td {
+	padding-right: 1rem;
 }
 
 
