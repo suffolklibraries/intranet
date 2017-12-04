@@ -29,7 +29,7 @@ include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
 require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
 // Include Customizer CSS.
-include_once( get_stylesheet_directory() . '/lib/output.php' );
+// LP don't include it at all: include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 // Add WooCommerce support.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
@@ -152,3 +152,27 @@ function wpdocs_dequeue_script() {
    wp_dequeue_script( 'sp_load_google_fonts' );
 }
 add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
+
+// LP dequeue Admin bar CSS
+function remove_admin_bar() {
+   wp_dequeue_style( 'admin-bar-css' );
+}
+add_action( 'wp_print_scripts', 'remove_admin_bar', 100 );
+
+// LP remove emoji styles and js
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+remove_action( 'wp_print_styles', 'admin-bar-css' );
+remove_action( 'admin_print_styles', 'admin-bar-css' );
+
+// LP Remove dashicons from front End
+// remove dashicons
+function wpdocs_dequeue_dashicon() {
+	if (current_user_can( 'update_core' )) {
+	    return;
+	}
+	wp_deregister_style('dashicons');
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
