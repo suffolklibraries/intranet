@@ -137,6 +137,54 @@ UTILITY CLASSES
 	height:auto;
 }
 
+/* Type scale (see http://tachyons.io/docs/typography/scale/) */
+.f1 {
+	font-size: 3rem !important;
+}
+
+.f2 {
+	font-size: 2.25rem !important;
+}
+
+.f3 {
+	font-size: 1.5rem !important;
+}
+
+.f4 {
+	font-size: 1.25rem !important;
+}
+
+.f5 {
+	font-size: 1rem !important;
+}
+
+.f6 {
+	font-size: 0.875rem !important;
+}
+
+/* Backround corporate purple */
+.bg-purple {
+	background-color: #3B1B53 !important;
+}
+
+.white {
+	color: white !important;
+}
+
+/* Some default 1 rem padding */
+.pa-normal {
+	padding: 1rem !important;
+}
+
+/* Margins */
+.ma0 {
+	margin: 0 !important;
+}
+
+.mb-normal {
+	margin-bottom: 1rem;
+}
+
 
 /*
 HEADER
@@ -443,7 +491,7 @@ WIDGETS
 
 .search-form input[type="submit"] {
 	padding: 0.25rem 0.5rem;
-	background-color: #00449E;
+	background-color: #389946;
 	color: white;
 	font-size: 0.875rem;
 	border: 1px solid #CCC;
