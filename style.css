@@ -46,17 +46,6 @@ RESET
 
 @media screen, projection {
 
-
-html {
-	font-size: 112.5%;
-}
-
-@media only screen and (min-width: 840px) {
-	html {
-		font-size: 125%;
-	}
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -108,6 +97,16 @@ figcaption {
 ELEMENTS
 --------------------------------------------------------------------------------
 */
+
+html {
+	font-size: 112.5%;
+}
+
+@media only screen and (min-width: 840px) {
+	html {
+		font-size: 125%;
+	}
+}
 
 a:link {
 	text-decoration: none;
@@ -471,6 +470,10 @@ FOOTERS
 WIDGETS
 --------------------------------------------------------------------------------
 */
+
+#wpadminbar {
+	display: none;
+}
 
 /* Search form */
 .search-form input[type="search"] {

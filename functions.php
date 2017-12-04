@@ -155,3 +155,9 @@ add_post_type_support( 'page', 'excerpt' );
 
 // LP surpress inline CSS (see https://github.com/copyblogger/genesis-simple-faq/issues/28)
 add_filter( 'gs_faq_print_styles', '__return_false' );
+
+// LP Remove WP admin bar
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
