@@ -147,18 +147,6 @@ function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
-// LP dequeue Gfonts Script
-function wpdocs_dequeue_script() {
-   wp_dequeue_script( 'sp_load_google_fonts' );
-}
-add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
-
-// LP dequeue Admin bar CSS
-function remove_admin_bar() {
-   wp_dequeue_style( 'admin-bar-css' );
-}
-add_action( 'wp_print_scripts', 'remove_admin_bar', 100 );
-
 // LP remove emoji styles and js
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
@@ -167,12 +155,18 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 remove_action( 'wp_print_styles', 'admin-bar-css' );
 remove_action( 'admin_print_styles', 'admin-bar-css' );
 
-// LP Remove dashicons from front End
-// remove dashicons
-function wpdocs_dequeue_dashicon() {
-	if (current_user_can( 'update_core' )) {
-	    return;
-	}
-	wp_deregister_style('dashicons');
+// LP remove customiser CSS
+add_action( 'customize_register', 'prefix_remove_css_section', 15 );
+/**
+ * Remove the additional CSS section, introduced in 4.7, from the Customizer.
+ * @param $wp_customize WP_Customize_Manager
+ */
+function prefix_remove_css_section( $wp_customize ) {
+	$wp_customize->remove_section( 'custom_css' );
 }
-add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
+
+//* LP Dequeue Styles - Remove Dashicons from Genesis Theme
+add_action( 'wp_print_styles', 'tn_dequeue_dashicons_style' );
+function tn_dequeue_dashicons_style() {
+      wp_dequeue_style( 'dashicons' );
+}
