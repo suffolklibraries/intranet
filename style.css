@@ -108,6 +108,13 @@ html {
 	}
 }
 
+@media only screen and (min-width: 1060px) {
+	html {
+		/* Nudge to allow login bar at widescreen */
+		margin-top: 32px;
+	}
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -563,6 +570,13 @@ WIDGETS
 
 #wpadminbar {
 	display: none;
+}
+
+/* Only show admin bar at widescreen */
+@media only screen and (min-width: 1060px) {
+	#wpadminbar {
+		display: block;
+	}
 }
 
 /* Search form */
