@@ -363,6 +363,11 @@ ARTICLES
 	margin-bottom: 1rem;
 }
 
+/* Make padding on article listing headers */
+.entry .entry-header {
+	padding-bottom: 0.25rem;
+}
+
 
 /* We need !importants here because Genesis injects
 inline code */
