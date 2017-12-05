@@ -171,10 +171,17 @@ function tn_dequeue_dashicons_style() {
       wp_dequeue_style( 'dashicons' );
 }
 
-//* Dequeue CC pages plugin styles
+//* LP Dequeue CC pages plugin styles
 add_action( 'wp_print_styles', 'dequeue_cc_pages' );
 function dequeue_cc_pages() {
       wp_dequeue_style( 'ccchildpagescss' );
       wp_dequeue_style( 'ccchildpagesiecss' );
       wp_dequeue_style( 'ccchildpagesskincss' );
+}
+
+// LP remove Genesis superfish scripts
+add_action( 'wp_enqueue_scripts', 'sp_disable_superfish' );
+function sp_disable_superfish() {
+	wp_deregister_script( 'superfish' );
+	wp_deregister_script( 'superfish-args' );
 }
