@@ -606,6 +606,7 @@ WIDGETS
 /* Widgets in sidebars */
 .sidebar .widget {
 	padding-bottom: 1.5rem;
+	font-size: 0.875rem;
 }
 
 .sidebar .widget-title {
@@ -644,41 +645,6 @@ WIDGETS
 	color: #777;
 }
 
-/* Nav list generated in main area
-Note: authors will need to add .main-page-nav-list wrapper
-*/
-.main-page-nav-list ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-.main-page-nav-list li {
-	padding: 0.25rem 0 1rem 0;
-}
-
-@media only screen and (min-width: 840px) {
-	.main-page-nav-list li {
-		padding: 0.25rem 0 1.5rem 0;
-	}
-}
-
-.main-page-nav-list h2 {
-	font-size: 1rem;
-	margin: 0;
-	font-weight: 600;
-}
-
-@media only screen and (min-width: 840px) {
-	.main-page-nav-list h2 {
-		font-size: 1.5rem;
-	}
-}
-
-.main-page-nav-list .entry-content p {
-	margin: 0;
-}
-
 /* Widgets on page nav lists */
 .widgets_on_page ul {
 	margin: 0 0 1.5rem 0;
@@ -700,6 +666,15 @@ Note: authors will need to add .main-page-nav-list wrapper
 .widgets_on_page .widgettitle {
 	font-size: 1rem;
 	margin: 0 0 0.25rem 0;
+}
+
+/* CC pages plugin styles */
+
+.entry-content h3.ccpage_linked_title {
+	font-size: 1.25rem;
+	padding-bottom: 0.25rem;
+	margin-bottom: 0.25rem;
+	border-bottom: 1px solid #EEE;
 }
 
 

@@ -29,8 +29,7 @@ Intranet is a child of the [Genesis Framework theme](https://www.google.co.uk/ur
 
 - Redux framework
     - WPO365-login (for O365 authentication)
-- Genesis Featured Page Advanced (for outputting page lists in sidebars)
-- Shortcodes Ultimate (for layout and other shortcode options)
+- CC Child Pages (generates lists of child/sibling pages with excerpts)
 - Genesis Simple Edits (to edit footer text)
 - Genesis Simple Hooks (to change WP hooks)
-- Widgets on Pages (to add any widgets to pages, good for front page menu, for example)
+- Widgets on Pages (to add any widgets to pages, mostly navigation menus for lists of forms, for examples)
