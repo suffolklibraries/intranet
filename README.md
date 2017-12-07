@@ -7,7 +7,7 @@ This is a child of the [Genesis Framework](https://my.studiopress.com/themes/gen
 
 Intranet is a child of the [Genesis Framework theme](https://www.studiopress.com/).
 
-It loads no Genesis styles; instead, it styles the parent theme's CSS. We also add functions to the child theme's `functions.php`, mainly to dequeue plugin styles and scripts, but also to add a few features, such as page excerpts.
+It loads no Genesis styles; instead, it styles the parent theme's HTML. We also add functions to the child theme's `functions.php`, mainly to dequeue plugin styles and scripts, but also to add a few features, such as page excerpts.
 
 
 ## Workflow
