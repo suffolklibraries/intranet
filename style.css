@@ -214,27 +214,16 @@ HEADER
 	margin: 0 auto;
 }
 
+/*
+This is the container for the header elements we want to lay out.
+We set the grid properties on the container and the direct children will be laid
+out accordingly.
+*/
 @media only screen and (min-width: 840px) {
 	.site-header .wrap {
-		display: table;
-		width: 100%;
-	}
-}
-
-/* Header layout at widescreen */
-@media only screen and (min-width: 840px) {
-	.title-area {
-		display: table-cell;
-		vertical-align: top;
-		width: 30%;
-		padding-right: 5%;
-	}
-	.header-widget-area {
-		display: table-cell;
-		vertical-align: top;
-		width: 60%;
-		padding-left: 5%;
-		text-align: right;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 2em;
 	}
 }
 
@@ -283,10 +272,15 @@ MAIN CONTENT AREA
 	margin: 0 auto;
 }
 
+/*
+This wraps the content areas we want to lay out with grid.
+We apply grid properties which determine the behaviour of its direct children.
+*/
 @media only screen and (min-width: 840px) {
 	.content-sidebar-wrap {
-		display: table;
-		width: 100%
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 2em;
 	}
 }
 
@@ -299,11 +293,9 @@ MAIN CONTENT AREA
 @media only screen and (min-width: 840px) {
 	#genesis-content {
 		padding: 2rem;
-		display: table-cell;
-		width: 65%;
-		vertical-align: top;
 		margin-bottom: 0;
-		border-right: 1px solid #CCC;
+		border: 1px solid #FFF;
+		border-radius: 3px;
 	}
 }
 
@@ -536,9 +528,8 @@ SIDEBARS
 @media only screen and (min-width: 840px) {
 	#genesis-sidebar-primary {
 		padding: 2rem;
-		display: table-cell;
-		width: 35%;
-		vertical-align: top;
+		border: 1px solid #FFF;
+		border-radius: 3px;
 	}
 }
 
@@ -585,6 +576,12 @@ WIDGETS
 }
 
 /* Search form */
+@media only screen and (min-width: 840px) {
+	.search-form {
+		text-align: right;
+	}
+}
+
 .search-form input[type="search"] {
 	width: 50%;
 	padding: 0.25rem 0.5rem;
