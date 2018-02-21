@@ -293,7 +293,6 @@ We apply grid properties which determine the behaviour of its direct children.
 @media only screen and (min-width: 840px) {
 	#genesis-content {
 		padding: 2rem;
-		margin-bottom: 0;
 		border: 1px solid #FFF;
 		border-radius: 3px;
 	}
@@ -577,8 +576,11 @@ WIDGETS
 
 /* Search form */
 @media only screen and (min-width: 840px) {
-	.search-form {
-		text-align: right;
+	/* Only need to align right if grid is supported */
+	@supports (display: grid) {
+		.search-form {
+			text-align: right;
+		}
 	}
 }
 
