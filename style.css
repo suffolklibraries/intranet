@@ -734,14 +734,30 @@ PRINT STYLES
 
 @media print {
 
-
 	* {
 		background: #FFF;
 		color: #000;
 	}
 
 	html {
-		font: 100%/1.5 georgia, serif;
+		font-size: 100%;
+		line-height: 1.4;
+		font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
+	}
+
+	.site-header,
+	.sidebar {
+		display: none;
+	}
+
+	#genesis-content {
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		box-sizing: border-box;
+		float: auto;
+		width: 100%;
+		margin-right: 0;
 	}
 
 
