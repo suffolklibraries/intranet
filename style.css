@@ -44,7 +44,7 @@ RESET
 --------------------------------------------------------------------------------
 */
 
-@media only screen, projection {
+@media screen, projection {
 
 body {
 	margin: 0;
@@ -102,13 +102,13 @@ html {
 	font-size: 106.25%;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	html {
 		font-size: 118.75%;
 	}
 }
 
-@media only screen and (min-width: 1060px) {
+@media screen and (min-width: 1060px) {
 	html {
 		/* Nudge to allow login bar at widescreen */
 		margin-top: 32px;
@@ -216,7 +216,7 @@ HEADER
 	padding: 1rem 0.5rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.site-header {
 		padding: 1rem 1.5rem;
 	}
@@ -230,7 +230,7 @@ HEADER
 /*
 This is the container for the header elements we want to lay out.
 */
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.site-header .wrap:before,
 	.site-header .wrap:after {
 		content: " ";
@@ -261,7 +261,7 @@ This is the container for the header elements we want to lay out.
 	color: #FFF;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.site-title {
 		font-size: 1rem;
 		margin-bottom: 0;
@@ -281,7 +281,7 @@ MAIN CONTENT AREA
 	padding-top: 1rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.site-inner {
 		padding: 1rem 1.5rem;
 	}
@@ -295,7 +295,7 @@ MAIN CONTENT AREA
 /*
 This wraps the content areas we want to lay out with grid.
 */
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.content-sidebar-wrap:before,
 	.content-sidebar-wrap:after {
 		content: " ";
@@ -316,7 +316,7 @@ This wraps the content areas we want to lay out with grid.
 	margin-bottom: 1.5rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	#genesis-content {
 		padding: 2rem;
 		border: 1px solid #FFF;
@@ -342,7 +342,7 @@ BREADCRUMBS
 	margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.breadcrumb {
 		padding: 0.5rem;
 		margin-bottom: 1rem;
@@ -406,7 +406,7 @@ inline code */
 	font-size: 1.25rem !important;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.entry-title,
 	.archive-title {
 		font-size: 2.25rem  !important;
@@ -479,7 +479,7 @@ inline code */
 	font-size: 1.25rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.entry-content h1,
 	.entry-content h2 {
 		font-size: 1.5rem;
@@ -491,7 +491,7 @@ inline code */
 	font-size: 1rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.entry-content h3,
 	.entry-content dt {
 		font-size: 1.25rem;
@@ -502,7 +502,7 @@ inline code */
 	font-size: 0.875rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.entry-content h4 {
 		font-size: 1rem;
 	}
@@ -554,7 +554,7 @@ SIDEBARS
 	background-color: #FFF;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	#genesis-sidebar-primary {
 		box-sizing: border-box;
 		padding: 2rem;
@@ -575,7 +575,7 @@ FOOTERS
 	padding: 1rem 0.5rem;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.site-footer {
 		padding: 1rem 1.5rem;
 	}
@@ -601,14 +601,14 @@ WIDGETS
 }
 
 /* Only show admin bar at widescreen */
-@media only screen and (min-width: 1060px) {
+@media screen and (min-width: 1060px) {
 	#wpadminbar {
 		display: block;
 	}
 }
 
 /* Search form */
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.search-form {
 		float: right;
 		width: 65%;
@@ -627,7 +627,7 @@ WIDGETS
 	border-radius: 0;
 }
 
-@media only screen and (min-width: 840px) {
+@media screen and (min-width: 840px) {
 	.search-form input[type="search"] {
 		width: 75%;
 	}
