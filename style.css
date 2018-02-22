@@ -735,8 +735,8 @@ PRINT STYLES
 @media print {
 
 	* {
-		background: #FFF;
-		color: #000;
+		background: #FFF !important;
+		color: #000 !important;
 	}
 
 	html {
@@ -745,8 +745,14 @@ PRINT STYLES
 		font-family: -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 	}
 
+	body {
+		margin: auto 17.5%;
+	}
+
 	.site-header,
-	.sidebar {
+	.sidebar,
+	.site-footer,
+	.breadcrumb {
 		display: none;
 	}
 
