@@ -9,6 +9,8 @@ Intranet is a child of the [Genesis Framework theme](https://www.studiopress.com
 
 It loads no Genesis styles; instead, it styles the parent theme's HTML. We also add functions to the child theme's `functions.php`, mainly to dequeue plugin styles and scripts, but also to add a few features, such as page excerpts.
 
+The secondary sidebar is unregistered. You can determine which widgets appear in the sidebar through the Widget Contexts plugin.
+
 
 ## Workflow
 
@@ -35,6 +37,7 @@ It loads no Genesis styles; instead, it styles the parent theme's HTML. We also 
 - [Genesis Simple Edits](https://en-gb.wordpress.org/plugins/genesis-simple-edits/) (to edit footer text)
 - [Genesis Simple Hooks](https://en-gb.wordpress.org/plugins/genesis-simple-hooks/) (to change WP hooks)
 - [Widgets on Pages](https://en-gb.wordpress.org/plugins/widgets-on-pages/) (to add any widgets to pages, mostly navigation menus for lists of forms, for examples)
+- [Context widgets](https://en-gb.wordpress.org/plugins/widget-context/) to control when widgets are displayed in the primary sidebar
 - [Relevanssi](https://en-gb.wordpress.org/plugins/relevanssi/) (for improved search)
 - [Custom Sidebars](https://en-gb.wordpress.org/plugins/custom-sidebars/) (to alter sidebars according to the page you're on)
 

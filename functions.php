@@ -185,3 +185,9 @@ function sp_disable_superfish() {
 	wp_deregister_script( 'superfish' );
 	wp_deregister_script( 'superfish-args' );
 }
+
+// LP remove secondary sidebar
+unregister_sidebar( 'sidebar-alt' );
+
+// LP remove footer widget areas
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
