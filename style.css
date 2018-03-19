@@ -77,6 +77,12 @@ dt {
 	margin: 0;
 }
 
+img {
+	height: auto !important;
+	width: auto !important;
+	max-width: 100% !important;
+}
+
 a img {
 	border: none;
 }
