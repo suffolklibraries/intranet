@@ -116,12 +116,18 @@ html {
 @media only screen and (min-width: 1060px) {
 	html {
 		/* Nudge to allow login bar at widescreen */
-		margin-top: 32px;
+		/* margin-top: 32px; re-enable if required */
 	}
 }
 
 a:link {
 	text-decoration: none;
+}
+
+blockquote {
+	margin: 1rem auto;
+	background-color: #CCC;
+	padding: 0 1rem;
 }
 
 
