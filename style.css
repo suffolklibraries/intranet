@@ -221,6 +221,13 @@ HEADER
 --------------------------------------------------------------------------------
 */
 
+/*
+Remove the login Backround*/
+
+#wpadminbar {
+	display: none !important;
+}
+
 .site-header {
 	background-color: #3B1B53;
 	color: #FFF;
