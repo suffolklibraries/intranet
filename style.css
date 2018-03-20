@@ -400,17 +400,19 @@ BREADCRUMBS
 	}
 }
 
+.breadcrumb a {
+	text-decoration: underline;
+}
+
 .breadcrumb a:link,
 .breadcrumb a:visited {
 	color: #00449E;
-	border-bottom: 1px dotted #00449E;
 }
 
 .breadcrumb a:hover,
 .breadcrumb a:active,
 .breadcrumb a:focus {
 	color: #EC008C;
-	border-bottom: 1px dotted #EC008C;
 }
 
 
@@ -581,6 +583,12 @@ ARTICLES
 	font-size: 0.875em;
 }
 
+@media only screen and (min-width: 1020px) {
+	.entry-content table {
+		white-space: normal;
+	}
+}
+
 .entry-content table,
 .entry-content table tbody {
   // optional - enable iOS momentum scrolling
@@ -594,7 +602,6 @@ ARTICLES
 
 .entry-content tr {
 	border-bottom: 1px solid #EEE;
-	max-width: 50%;
 }
 
 .entry-content td,
