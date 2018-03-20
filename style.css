@@ -120,14 +120,11 @@ html {
 	}
 }
 
-a:link {
-	text-decoration: none;
-}
 
 blockquote {
 	margin: 1rem auto;
-	background-color: #CCC;
-	padding: 0 1rem;
+	background-color: #EEE;
+	padding: 1rem;
 }
 
 
