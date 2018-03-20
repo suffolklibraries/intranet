@@ -501,6 +501,10 @@ ARTICLES
 	color: #EC008C;
 }
 
+.entry-content a {
+	text-decoration: underline;
+}
+
 .entry-content a:link {
 	color: #00449E;
 }
@@ -590,6 +594,7 @@ ARTICLES
 
 .entry-content tr {
 	border-bottom: 1px solid #EEE;
+	max-width: 50%;
 }
 
 .entry-content td,
@@ -791,6 +796,7 @@ WIDGETS
 
 .entry-content h3.ccpage_linked_title a {
 	border-bottom: 2px solid;
+	text-decoration: none;
 }
 
 
