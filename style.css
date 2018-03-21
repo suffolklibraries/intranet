@@ -296,8 +296,11 @@ This is the container for the header elements we want to lay out.
 
 .site-title {
 	font-size: 0.875rem;
-	font-weight: 600;
-	margin: 0 0 0.25rem 0;
+	margin: 0 0 0.5rem 0;
+}
+
+.site-title a {
+	border-bottom: 2px solid;
 }
 
 .site-title a:link,
@@ -804,6 +807,66 @@ WIDGETS
 .entry-content h3.ccpage_linked_title a {
 	border-bottom: 2px solid;
 	text-decoration: none;
+}
+
+/* Blox lite (for the post header content) */
+
+#blox_global_866 {
+	background-color: #000;
+	color: #EEE;
+	border-top: 1px solid #FFF;
+}
+
+.blox-wrap {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 0.25rem 0.5rem;
+}
+
+@media only screen and (min-width: 840px) {
+	.blox-wrap {
+		padding: 1rem 1.5rem;
+	}
+}
+
+.blox-raw-container {
+	font-size: 0.875em;
+}
+
+.blox-raw-container .widgets_on_page ul {
+	margin: 0;
+}
+
+.blox-raw-container .widgets_on_page li a {
+	display: inline;
+	padding: 0;
+	border: 0;
+	color: #FFF;
+	border-bottom: 2px solid;
+}
+
+.blox-raw-container .widgets_on_page li a:hover,
+.blox-raw-container .widgets_on_page li a:active,
+.blox-raw-container .widgets_on_page li a:focus {
+	color: #EC008C;
+}
+
+.blox-raw-container .entry-header,
+.blox-raw-container .archive-description {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.blox-raw-container h4.entry-title,
+.blox-raw-container h4.archive-title {
+	font-size: 1rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.blox-raw-container p {
+	margin: 0 !important;
 }
 
 
