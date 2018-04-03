@@ -30,6 +30,7 @@ TABLE OF CONTENTS
 - SIDEBARS
 - FOOTERS
 - WIDGETS
+- COMMENTS
 - PRINT STYLES
 - FONTS
 
@@ -867,6 +868,119 @@ WIDGETS
 
 .blox-raw-container p {
 	margin: 0 !important;
+}
+
+
+/*
+COMMENTS
+--------------------------------------------------------------------------------
+*/
+
+.entry-comments-link:before {
+	content: ' / ';
+}
+
+.entry-comments,
+.comment-respond {
+	padding: 0.5rem 0;
+	border-top: 1px solid #EEE;
+}
+
+.entry-comments h3 {
+	margin-bottom: 0.5rem;
+}
+
+.comment-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.comment {
+	padding: 0.5rem 1rem;
+	background-color: #EEE;
+	margin: 0 0 1rem 0;
+}
+
+.comment-author {
+	font-weight: 600;
+	margin: 0.5rem 0 0 0;
+}
+
+.comment-author .avatar,
+.says,
+.post-edit-link,
+.comment-edit-link,
+.logged-in-as a:first-of-type + a {
+	display: none;
+}
+
+.comment-meta {
+	margin: 0;
+	font-size: 0.875em;
+}
+
+.comment-content p {
+	margin-top: 0;
+}
+
+.comment-reply {
+	font-size: 0.875rem;
+	margin-top: -0.5rem;
+}
+
+.comment a:link,
+.comment a:visited,
+.comment-respond a:link,
+.comment-respond a:visited {
+	color: #00449E;
+}
+
+.comment a:hover,
+.comment a:active,
+.comment a:focus,
+.comment-respond a:hover,
+.comment-respond a:active,
+.comment-respond a:focus {
+	color: #EC008C;
+}
+
+.comment-content a,
+.comment-reply a {
+	text-decoration: underline;
+}
+
+.children li {
+	list-style-type: none;
+}
+
+.logged-in-as {
+	margin-top: 0;
+	font-size: 0.875rem;
+}
+
+.comment-form label {
+	display: block;
+	font-size: 0.875rem;
+	margin-bottom: 0.25rem;
+}
+
+.comment-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem;
+	font-family: monospace;
+	font-size: inherit;
+}
+
+.form-submit .submit {
+	padding: 0.5rem;
+	border: none;
+	font: inherit;
+	color: #FFF;
+	background-color: #00449E;
+	border-radius: 0.25rem;
+	cursor: pointer;
 }
 
 
