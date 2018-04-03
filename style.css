@@ -959,13 +959,15 @@ COMMENTS
 	font-size: 0.875rem;
 }
 
-.comment-form label {
+.comment-form label,
+.wpcf7-form label {
 	display: block;
 	font-size: 0.875rem;
 	margin-bottom: 0.25rem;
 }
 
-.comment-form textarea {
+.comment-form textarea,
+.wpcf7-form textarea {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.5rem;
@@ -973,7 +975,8 @@ COMMENTS
 	font-size: inherit;
 }
 
-.form-submit .submit {
+.form-submit .submit,
+.wpcf7-form .wpcf7-submit {
 	padding: 0.5rem;
 	border: none;
 	font: inherit;
