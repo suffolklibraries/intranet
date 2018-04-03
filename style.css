@@ -812,10 +812,11 @@ WIDGETS
 
 /* Blox lite (for the post header content) */
 
-#blox_global_866 {
-	background-color: #000;
-	color: #EEE;
+.blox-container {
+	background-color: #CCC;
+	color: #333;
 	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
 }
 
 .blox-wrap {
@@ -842,7 +843,7 @@ WIDGETS
 	display: inline;
 	padding: 0;
 	border: 0;
-	color: #FFF;
+	color: #00449E;
 	border-bottom: 2px solid;
 }
 
@@ -862,7 +863,7 @@ WIDGETS
 .blox-raw-container h4.entry-title,
 .blox-raw-container h4.archive-title {
 	font-size: 1rem !important;
-	margin: 0 !important;
+	margin: 0 0 0.25rem 0 !important;
 	padding: 0 !important;
 }
 
