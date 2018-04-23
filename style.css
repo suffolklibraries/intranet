@@ -1006,14 +1006,11 @@ PRINT STYLES
 		font-family: 'Source Sans Pro Local', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 	}
 
-	body {
-		margin: auto 17.5%;
-	}
-
 	.site-header,
 	.sidebar,
 	.site-footer,
-	.breadcrumb {
+	.breadcrumb,
+	.blox-container {
 		display: none;
 	}
 
