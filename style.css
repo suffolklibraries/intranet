@@ -643,6 +643,27 @@ ARTICLES
 	margin-right: 0.5em;
 }
 
+.pagination ul li a:link,
+.pagination ul li a:visited {
+	background-color: #00449E;
+	padding: 0.125em;
+	color: #FFF;
+}
+
+.pagination ul li a:hover,
+.pagination ul li a:active,
+.pagination ul li a:focus {
+	background-color: #EC008C;
+	padding: 0.125em;
+	color: #FFF;
+}
+
+.pagination ul li.active a {
+	background-color: #333;
+}
+
+
+
 
 /*
 SIDEBARS
