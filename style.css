@@ -646,7 +646,7 @@ ARTICLES
 .pagination ul li a:link,
 .pagination ul li a:visited {
 	background-color: #00449E;
-	padding: 0.125em;
+	padding: 0.125em 0.5em;
 	color: #FFF;
 }
 
@@ -654,12 +654,13 @@ ARTICLES
 .pagination ul li a:active,
 .pagination ul li a:focus {
 	background-color: #EC008C;
-	padding: 0.125em;
+	padding: 0.125em 0.5em;
 	color: #FFF;
 }
 
 .pagination ul li.active a {
-	background-color: #333;
+	background-color: #EFEFEF;
+	color: #333;
 }
 
 
