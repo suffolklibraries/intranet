@@ -391,6 +391,8 @@ BREADCRUMBS
 --------------------------------------------------------------------------------
 */
 
+/* Genesis breadcrumbs styling */
+
 .breadcrumb {
 	font-size: 0.875rem;
 	color: #777;
@@ -419,6 +421,33 @@ BREADCRUMBS
 .breadcrumb a:active,
 .breadcrumb a:focus {
 	color: #EC008C;
+}
+
+/* NavXT styling */
+
+.breadcrumbs {
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 840px) {
+	.breadcrumbs {
+		padding: 0.5rem 2rem;
+	}
+}
+
+.breadcrumbs span[typeof="ListItem"] {
+	font-size: 0.875em;
+}
+
+@media only screen and (min-width: 840px) {
+	.breadcrumbs span[typeof="ListItem"] {
+		font-size: 1em;
+	}
 }
 
 
