@@ -191,3 +191,21 @@ unregister_sidebar( 'sidebar-alt' );
 
 // LP remove footer widget areas
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+
+// LP add nav menu shortcode
+// See https://firstsiteguide.com/wordpress-menus-tips-and-tricks/
+function menu_function($atts, $content = null) {
+	extract(
+	shortcode_atts(
+	array( 'name' => null, ),
+	$atts
+	)
+	);
+	return wp_nav_menu(
+	array(
+	'menu' => $name,
+	'echo' => false
+	)
+	);
+}
+add_shortcode('menu', 'menu_function');

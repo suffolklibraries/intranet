@@ -255,7 +255,7 @@ HEADER
 */
 
 /*
-Remove the login Backround
+Remove the login
 */
 
 #wpadminbar {
@@ -318,12 +318,41 @@ This is the container for the header elements we want to lay out.
 }
 
 @media only screen and (min-width: 840px) {
-	.site-title {
+	.title-area {
 		font-size: 1rem;
 		margin-bottom: 0;
 		float: left;
 		width: 30%;
 		margin-right: 5%;
+	}
+}
+
+@media only screen and (min-width: 840px) {
+	.header-widget-area {
+		font-size: 1rem;
+		margin-bottom: 0;
+		float: right;
+		width: 65%;
+	}
+}
+
+.menu-tools-menu-container {
+	margin-bottom: 1rem;
+	font-weight: normal;
+}
+
+@media only screen and (min-width: 840px) {
+	.menu-tools-menu-container {
+		float: right;
+		margin-left : 0.6rem;
+		margin-bottom: 0;
+		font-weight: bold;
+	}
+}
+
+@media only screen and (min-width: 840px) {
+	.site-header .widget_search {
+		float: right;
 	}
 }
 
@@ -432,6 +461,21 @@ BREADCRUMBS
 	border: 1px solid #FFF;
 	border-radius: 3px;
 	box-sizing: border-box;
+}
+
+.breadcrumbs a {
+	text-decoration: underline;
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+	color: #00449E;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active,
+.breadcrumbs a:focus {
+	color: #EC008C;
 }
 
 @media only screen and (min-width: 840px) {
@@ -753,18 +797,31 @@ WIDGETS
 	}
 }
 
+/* Header tools menu */
+.header-widget-area .menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0.875rem;
+}
+
+.header-widget-area .menu a {
+	color: #FFF;
+	text-decoration: underline;
+	display: block;
+	padding: 0.125rem 0;
+}
+
 /* Search form */
 @media only screen and (min-width: 840px) {
 	.search-form {
-		float: right;
-		width: 65%;
 		text-align: right;
 		box-sizing: border-box;
 	}
 }
 
 .search-form input[type="search"] {
-	width: 50%;
+	width: 70%;
 	padding: 0.25rem 0.5rem;
 	border: 1px solid #CCC;
 	font-size: 0.875rem;
@@ -775,7 +832,7 @@ WIDGETS
 
 @media only screen and (min-width: 840px) {
 	.search-form input[type="search"] {
-		width: 75%;
+		width: 17rem;
 	}
 }
 
@@ -950,6 +1007,33 @@ WIDGETS
 
 .blox-raw-container p {
 	margin: 0 !important;
+}
+
+/* Learndash */
+
+#learndash_profile {
+
+}
+
+.learndash_profile_heading,
+#learndash_profile a,
+#learndash_profile div {
+	font-size: 1rem !important;
+	font-family: 'Source Sans Pro Local', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif !important;
+}
+
+#learndash_profile .expand_collapse {
+	display: none !important;
+}
+
+#learndash_profile .expand_collapse a {
+	display: inline-block !important;
+	font-size: 0.875rem !important;
+	padding: 0.25rem 0 !important;
+}
+
+#learndash_profile .profile_avatar {
+	display: none !important;
 }
 
 
