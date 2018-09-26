@@ -809,7 +809,7 @@ WIDGETS
 	color: #FFF;
 	text-decoration: underline;
 	display: block;
-	padding: 0.125rem 0;
+	padding: 0.25rem 0;
 }
 
 /* Search form */
@@ -1017,6 +1017,19 @@ WIDGETS
 
 .learndash_profile_heading,
 #learndash_profile a,
+#learndash_profile div,
+#learndash_lessons a,
+#learndash_quizzes a,
+.learndash_topic_dots a,
+.learndash_topic_dots a > span,
+#learndash_lesson_topics_list span a,
+#learndash_lessons, #learndash_quizzes,
+.expand_collapse,
+.notavailable_message,
+#learndash_lesson_topics_list div > strong,
+#learndash_lesson_topics_list div ul > li .sn,
+.learndash_profile_heading,
+#learndash_profile a,
 #learndash_profile div {
 	font-size: 1rem !important;
 	font-family: 'Source Sans Pro Local', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif !important;
@@ -1034,6 +1047,16 @@ WIDGETS
 
 #learndash_profile .profile_avatar {
 	display: none !important;
+}
+
+#learndash_mark_complete_button {
+	padding: 0.5rem;
+	border: none;
+	font: inherit;
+	color: #FFF;
+	background-color: #00449E;
+	border-radius: 0.25rem;
+	cursor: pointer;
 }
 
 
