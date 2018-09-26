@@ -1059,6 +1059,19 @@ WIDGETS
 	cursor: pointer;
 }
 
+.learndash_course_certificate .btn-blue {
+	transition: none !important;
+	color: #FFF !important;
+	padding: 0.5rem;
+	border: none !important;
+	font: inherit !important;
+	color: #FFF !important;
+	background-color: #00449E !important;
+	border-radius: 0.25rem !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+}
+
 
 /*
 COMMENTS
