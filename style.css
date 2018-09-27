@@ -47,7 +47,7 @@ body {
 	padding: 0;
 	line-height: 1.5;
 	color: #333;
-	background-color: #EEE;
+	background-color: #CCC;
 	font-family: 'Source Sans Pro Local', -apple-system, BlinkMacSystemFont, ubuntu, roboto, noto, "segoe ui", "helvetica neue", helvetica, arial, sans-serif;
 }
 
@@ -365,10 +365,6 @@ MAIN CONTENT AREA
 --------------------------------------------------------------------------------
 */
 
-.site-inner {
-	padding-top: 1rem;
-}
-
 @media only screen and (min-width: 840px) {
 	.site-inner {
 		padding: 1rem 1.5rem;
@@ -503,16 +499,16 @@ ARTICLES
 --------------------------------------------------------------------------------
 */
 
-.archive .entry {
+.content .archive .entry {
 	padding: 1rem 0;
 }
 
-.search-results .entry,
+.content .search-results .entry,
 .blog .entry {
 	padding-bottom: 1.5rem;
 }
 
-.entry-header,
+.content .entry-header,
 .archive-description {
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #EEE;
@@ -954,10 +950,10 @@ WIDGETS
 /* Blox lite (for the post header content) */
 
 .blox-container {
-	background-color: #CCC;
+	background-color: #EEE;
 	color: #333;
 	border-top: 1px solid #FFF;
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #CCC;
 }
 
 .blox-wrap {
@@ -968,7 +964,7 @@ WIDGETS
 
 @media only screen and (min-width: 840px) {
 	.blox-wrap {
-		padding: 1rem 1.5rem;
+		padding: 0.5rem 1.5rem;
 	}
 }
 
