@@ -96,6 +96,9 @@ figcaption {
 	margin: 0;
 }
 
+*:focus {
+    outline: 3px solid #FFB700;
+}
 
 /*
 ELEMENTS
