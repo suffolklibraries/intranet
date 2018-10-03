@@ -251,6 +251,36 @@ UTILITY CLASSES
 	*zoom: 1;
 }
 
+/* Thirds for layouts */
+
+@media only screen and (min-width: 560px) {
+	
+	.w-third-ns {
+		width: 30%;
+	}
+
+	.fl-ns {
+		float: left;
+	}
+
+	.fr-ns {
+		float: right;
+	}
+
+	.mr-ns {
+		margin-right: 5%;
+	}
+
+	.ml-ns {
+		margin-left: 5%;
+	}
+
+	.w-two-thirds-ns {
+		width: 65%;
+	}
+
+}
+
 
 /*
 HEADER
