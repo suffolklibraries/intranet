@@ -1098,6 +1098,7 @@ WIDGETS
 	padding: 1em;
 	border: 1px solid #CCC;
 	background-color: #EEE;
+	display: block;
 }
 
 .learndash_course_certificate .btn-blue {
