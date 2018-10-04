@@ -1057,7 +1057,8 @@ WIDGETS
 .learndash_topic_dots a,
 .learndash_topic_dots a > span,
 #learndash_lesson_topics_list span a,
-#learndash_lessons, #learndash_quizzes,
+#learndash_lessons,
+#learndash_quizzes,
 .expand_collapse,
 .notavailable_message,
 #learndash_lesson_topics_list div > strong,
@@ -1091,6 +1092,12 @@ WIDGETS
 	background-color: #00449E;
 	border-radius: 0.25rem;
 	cursor: pointer;
+}
+
+#learndash_course_status {
+	padding: 1em;
+	border: 1px solid #CCC;
+	background-color: #EEE;
 }
 
 .learndash_course_certificate .btn-blue {
