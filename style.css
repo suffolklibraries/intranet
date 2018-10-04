@@ -684,6 +684,10 @@ ARTICLES
 	margin: 1rem 0;
 }
 
+.entry-content li {
+	margin-bottom: 1rem;
+}
+
 .entry-content table {
 	display: inline-block;
 	vertical-align: top;
