@@ -238,6 +238,11 @@ UTILITY CLASSES
 	margin-bottom: 1rem;
 }
 
+.center {
+	margin: 0 auto;
+	display: block;
+}
+
 /* Clearfix */
 .cf:before,
 .cf:after {
@@ -685,7 +690,7 @@ ARTICLES
 }
 
 .entry-content li {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .entry-content table {
