@@ -254,7 +254,7 @@ UTILITY CLASSES
 /* Thirds for layouts */
 
 @media only screen and (min-width: 560px) {
-	
+
 	.w-third-ns {
 		width: 30%;
 	}
@@ -372,6 +372,11 @@ This is the container for the header elements we want to lay out.
 .menu-tools-menu-container {
 	margin-bottom: 1rem;
 	font-weight: normal;
+}
+
+.menu-tools-menu-container a {
+	color: #FFF;
+	border-bottom: 2px solid;
 }
 
 @media only screen and (min-width: 840px) {
