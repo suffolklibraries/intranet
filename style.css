@@ -711,7 +711,7 @@ ARTICLES
 	padding: 0;
 }
 
-.entry-content table li {
+.entry-content table ul li {
 	list-style-type: none;
 	margin: 0;
 }
