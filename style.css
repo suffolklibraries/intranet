@@ -696,6 +696,7 @@ ARTICLES
 .entry-content table {
 	display: inline-block;
 	vertical-align: top;
+	width: 100%;
 	max-width: 100%;
 	overflow-x: auto;
 	white-space: nowrap;
@@ -703,6 +704,16 @@ ARTICLES
 	border-spacing: 0;
 	margin: 1rem 0;
 	font-size: 0.875em;
+}
+
+.entry-content table ul {
+	margin: 0;
+	padding: 0;
+}
+
+.entry-content table li {
+	list-style-type: none;
+	margin: 0;
 }
 
 @media only screen and (min-width: 1020px) {
