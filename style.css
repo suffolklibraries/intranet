@@ -220,6 +220,14 @@ UTILITY CLASSES
 	background-color: #3B1B53 !important;
 }
 
+.bg-light-gray {
+	background-color: #EEE;
+}
+
+.ba--moon-gray {
+	border: 1px solid #CCC;
+}
+
 .white {
 	color: white !important;
 }
