@@ -693,6 +693,17 @@ ARTICLES
 	margin-bottom: 0.5rem;
 }
 
+.wp-caption.alignnone {
+	padding: 0.5rem;
+	background-color: #CCC;
+	margin: 1rem 0;
+}
+
+.entry-content img {
+	box-sizing: border-box;
+	border: 2px solid #EEE;
+}
+
 .entry-content table {
 	display: inline-block;
 	vertical-align: top;
